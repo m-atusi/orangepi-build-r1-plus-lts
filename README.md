@@ -1,3 +1,5 @@
+for Orange Pi R1 Plus LTS on Wsl environment
+
 ## Supported boards
 
 Soc | Boards |
