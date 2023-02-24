@@ -1,6 +1,10 @@
-for Orange Pi R1 Plus LTS on Wsl(jammy) environment
+for Orange Pi R1 Plus LTS on Wsl(jammy and docker) environment
 
 ./output/images/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img
+
+<img width="731" alt="スクリーンショット 2023-02-24 134906" src="https://user-images.githubusercontent.com/59951021/221100023-44c8a493-4e29-4c61-a815-03446ceeb48c.png">
+
+
 
 ## Supported boards
 
