@@ -1,0 +1,212 @@
+
+## BUILD SCRIPT ENVIRONMENT
+
+Repository: 
+Version: 
+
+Host OS: jammy
+Host arch: amd64
+Host system: Linux localvaio 5.15.79.1-microsoft-standard-WSL2 #1 SMP Wed Nov 23 01:01:46 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Virtualization type: wsl
+
+## Build script directories
+Build directory is located on:
+TARGET SOURCE   FSTYPE  AVAIL
+/      /dev/sdc ext4   951.3G
+
+Build directory permissions:
+# file: /home/atusi/build/orangepi-build-r1-plus-lts
+# owner: atusi
+# group: atusi
+user::rwx
+group::r-x
+other::r-x
+
+Temp directory permissions:
+
+
+## BUILD CONFIGURATION
+
+Build target:
+Board: orangepir1plus-lts
+Branch: current
+Minimal: yes
+Desktop: no
+
+Kernel configuration:
+Repository: https://github.com/orangepi-xunlong/linux-orangepi.git
+Branch: branch:orange-pi-5.10-rockchip64
+Config file: linux-rockchip64-current
+
+U-boot configuration:
+Repository: https://github.com/orangepi-xunlong/u-boot-orangepi.git
+Branch: branch:v2020.10-rockchip64
+Config file: orangepi_r1_plus_lts_rk3328_defconfig
+
+Partitioning configuration:
+Root partition type: ext4
+Boot partition type: (none)
+User provided boot partition size: 0
+Offset: 30
+
+CPU configuration:
+408000 - 1296000 with ondemand
+Displaying message: Preparing host info
+Displaying message: Build host OS release jammy info
+Displaying message: Running in container wsl info
+Displaying message: apt-cacher is disabled in containers, set NO_APT_CACHER=no to override  wrn
+Displaying message: Installing build dependencies
+Displaying message: Checking for external GCC compilers  info
+Displaying message: downloading using http(s) network gcc-linaro-aarch64-none-elf-4.8-2013.11_linux.tar.xz
+gpg: keybox '/home/atusi/build/orangepi-build-r1-plus-lts/external/cache/.gpg/pubring.kbx' created
+gpg: /home/atusi/build/orangepi-build-r1-plus-lts/external/cache/.gpg/trustdb.gpg: trustdb created
+gpg: error reading key: No public key
+gpg: key D47877808F427EAF: public key "Linaro Toolchain Builder <michael.hope+cbuild@linaro.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: error reading key: No public key
+gpg: key 93D6889F9F0E78D5: public key "Igor Pecovnik <igor@armbian.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: assuming signed data in '/home/atusi/build/orangepi-build-r1-plus-lts/toolchains/gcc-linaro-aarch64-none-elf-4.8-2013.11_linux.tar.xz'
+gpg: Signature made Tue 19 Nov 2013 06:00:03 PM JST
+gpg:                using RSA key D47877808F427EAF
+gpg: Good signature from "Linaro Toolchain Builder <michael.hope+cbuild@linaro.org>" [unknown]
+Displaying message: Verified PGP info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-linaro-arm-none-eabi-4.8-2014.04_linux.tar.xz
+pub   rsa2048 2011-01-04 [SC]
+      873D6A08B28A5167B466D9D4D47877808F427EAF
+uid           [ unknown] Linaro Toolchain Builder <michael.hope+cbuild@linaro.org>
+
+pub   rsa4096 2015-03-16 [SC]
+      DF00FAF1C577104B50BF1D0093D6889F9F0E78D5
+uid           [ unknown] Igor Pecovnik <igor@armbian.com>
+uid           [ unknown] Igor Pecovnik (Ljubljana, Slovenia) <igor.pecovnik@gmail.com>
+sub   rsa4096 2015-03-16 [E]
+
+gpg: assuming signed data in '/home/atusi/build/orangepi-build-r1-plus-lts/toolchains/gcc-linaro-arm-none-eabi-4.8-2014.04_linux.tar.xz'
+gpg: Signature made Thu 17 Apr 2014 03:29:44 PM JST
+gpg:                using RSA key D47877808F427EAF
+gpg: Good signature from "Linaro Toolchain Builder <michael.hope+cbuild@linaro.org>" [unknown]
+Displaying message: Verified PGP info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux.tar.xz
+pub   rsa2048 2011-01-04 [SC]
+      873D6A08B28A5167B466D9D4D47877808F427EAF
+uid           [ unknown] Linaro Toolchain Builder <michael.hope+cbuild@linaro.org>
+
+pub   rsa4096 2015-03-16 [SC]
+      DF00FAF1C577104B50BF1D0093D6889F9F0E78D5
+uid           [ unknown] Igor Pecovnik <igor@armbian.com>
+uid           [ unknown] Igor Pecovnik (Ljubljana, Slovenia) <igor.pecovnik@gmail.com>
+sub   rsa4096 2015-03-16 [E]
+
+gpg: assuming signed data in '/home/atusi/build/orangepi-build-r1-plus-lts/toolchains/gcc-linaro-arm-linux-gnueabihf-4.8-2014.04_linux.tar.xz'
+gpg: Signature made Thu 17 Apr 2014 03:29:14 AM JST
+gpg:                using RSA key D47877808F427EAF
+gpg: Good signature from "Linaro Toolchain Builder <michael.hope+cbuild@linaro.org>" [unknown]
+Displaying message: Verified PGP info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabi.tar.xz
+Displaying message: Verified MD5 info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-linaro-4.9.4-2017.01-x86_64_aarch64-linux-gnu.tar.xz
+Displaying message: Verified MD5 info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-linaro-5.5.0-2017.10-x86_64_arm-linux-gnueabihf.tar.xz
+Displaying message: Verified MD5 info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-linaro-7.4.1-2019.02-x86_64_arm-linux-gnueabi.tar.xz
+Displaying message: Verified MD5 info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-linaro-7.4.1-2019.02-x86_64_aarch64-linux-gnu.tar.xz
+Displaying message: Verified MD5 info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf.tar.xz
+Displaying message: Verified MD5 info
+Displaying message: decompressing
+Displaying message: downloading using http(s) network gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu.tar.xz
+Displaying message: Verified MD5 info
+Displaying message: decompressing
+Displaying message: Downloading sources  info
+Displaying message: Checking git sources /home/atusi/build/orangepi-build-r1-plus-lts/u-boot v2020.10-rockchip64 info
+Displaying message: Creating local copy
+Displaying message: Fetching updates
+Displaying message: Checking out
+Displaying message: Checking git sources /home/atusi/build/orangepi-build-r1-plus-lts/kernel orange-pi-5.10-rockchip64 info
+Displaying message: Creating local copy
+Displaying message: Fetching updates
+Displaying message: Checking out
+Displaying message: Checking git sources /home/atusi/build/orangepi-build-r1-plus-lts/external/cache/sources/sunxi-tools master info
+Displaying message: Creating local copy
+Displaying message: Fetching updates
+Displaying message: Checking out
+Displaying message: Checking git sources /home/atusi/build/orangepi-build-r1-plus-lts/external/cache/sources/rkbin-tools master info
+Displaying message: Creating local copy
+Displaying message: Fetching updates
+Displaying message: Checking out
+Displaying message: Compiling sunxi-tools info
+Displaying message: Installing rkbin-tools info
+Displaying message: Cleaning /home/atusi/build/orangepi-build-r1-plus-lts/output/debs for orangepir1plus-lts current info
+Displaying message: Compiling u-boot v2020.10 info
+Displaying message: Compiler version aarch64-none-linux-gnu-gcc 9.2.1 info
+Displaying message: Started patching process for u-boot rockchip64-orangepir1plus-lts-current info
+Displaying message: Looking for user patches in userpatches/u-boot/u-boot-rockchip64-mainline info
+Displaying message: Building deb linux-u-boot-current-orangepir1plus-lts_2.2.2_arm64.deb info
+dpkg-deb: building package 'linux-u-boot-orangepir1plus-lts-current' in '/home/atusi/build/orangepi-build-r1-plus-lts/.tmp/linux-u-boot-current-orangepir1plus-lts_2.2.2_arm64.deb'.
+Displaying message: Started patching process for kernel rockchip64-current info
+Displaying message: Looking for user patches in userpatches/kernel/rockchip64-current info
+Displaying message: Compiling current kernel 5.10.44 info
+Displaying message: Compiler version aarch64-none-linux-gnu-gcc 9.2.1 info
+Displaying message: Using kernel config file config/kernel/linux-rockchip64-current.config info
+Displaying message: Exporting new kernel config /home/atusi/build/orangepi-build-r1-plus-lts/output/config/linux-rockchip64-current.config info
+Displaying message: Creating packages
+Displaying message: Building deb orangepi-config info
+Displaying message: Merging and packaging linux firmware @host info
+Displaying message: Checking git sources /home/atusi/build/orangepi-build-r1-plus-lts/external/cache/sources/orangepi-firmware-git master info
+Displaying message: Creating local copy
+Displaying message: Fetching updates
+Displaying message: Checking out
+Displaying message: Creating board support package orangepir1plus-lts current info
+Displaying message: Fingerprinting
+Displaying message: Building package linux-focal-root-current-orangepir1plus-lts info
+Displaying message: Building desktop package orangepi-focal-desktop_2.2.2_all info
+Displaying message: Starting rootfs and image building process for orangepir1plus-lts current focal info
+Displaying message: local not found Creating new rootfs cache for focal info
+Displaying message: Installing base system Stage 1/2 info
+Displaying message: Installing base system Stage 2/2 info
+Displaying message: Configuring locales en_US.UTF-8 info
+Displaying message: Updating package list focal info
+Displaying message: Upgrading base packages Orange Pi info
+Displaying message: Installing packages for Orange Pi info
+Displaying message: Ending debootstrap process and preparing cache focal info
+Displaying message: Unmounting /home/atusi/build/orangepi-build-r1-plus-lts/.tmp/rootfs-current-orangepir1plus-lts-focal-no-yes info
+Displaying message: Applying distribution specific tweaks for focal info
+Displaying message: Applying common tweaks  info
+Displaying message: Updating package lists
+Displaying message: Installing linux-u-boot-current-orangepir1plus-lts_2.2.2_arm64.deb
+Displaying message: Installing linux-image-current-rockchip64_2.2.2_arm64.deb
+Displaying message: Installing linux-dtb-current-rockchip64_2.2.2_arm64.deb
+Displaying message: Installing linux-focal-root-current-orangepir1plus-lts_2.2.2_arm64.deb
+Displaying message: Installing orangepi-firmware_2.2.2_all.deb
+Displaying message: Enabling serial console ttyS2 info
+Displaying message: Enabling serial console ttyGS0 info
+Displaying message: Calling image customization script customize-image.sh info
+Displaying message: Unmounting /home/atusi/build/orangepi-build-r1-plus-lts/.tmp/rootfs-current-orangepir1plus-lts-focal-no-yes info
+Displaying message: Preparing image file for rootfs orangepir1plus-lts focal info
+Displaying message: Current rootfs size 880 MiB info
+Displaying message: Creating blank image for rootfs 1140 MiB info
+Displaying message: Creating partitions root: ext4 info
+Displaying message: Creating rootfs ext4 on /dev/loop0p1
+Displaying message: Copying files to root directory
+Displaying message: Copying files to /boot directory
+Displaying message: Updating initramfs... update-initramfs -uv -k 5.10.44-rockchip64 
+Displaying message: Updated initramfs. for details see: /home/atusi/build/orangepi-build-r1-plus-lts/output/debug/install.log ext
+Displaying message: Unmounting /home/atusi/build/orangepi-build-r1-plus-lts/.tmp/mount-current-orangepir1plus-lts-focal-no-yes/ info
+Displaying message: Writing U-boot bootloader /dev/loop0 info
+Displaying message: SHA256 calculating Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img info
+Displaying message: GPG signing skipped - no GPG_PASS Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img wrn
+Displaying message: Done building /home/atusi/build/orangepi-build-r1-plus-lts/output/images/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img info
+Displaying message: Runtime 194 min info
+Displaying message: Repeat Build Options sudo ./build.sh  BOARD=orangepir1plus-lts BRANCH=current BUILD_OPT=image RELEASE=focal BUILD_MINIMAL=yes BUILD_DESKTOP=no KERNEL_CONFIGURE=yes info

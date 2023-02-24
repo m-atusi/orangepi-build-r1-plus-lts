@@ -1,0 +1,731 @@
+dpkg-deb: building package 'orangepi-firmware' in 'orangepi-firmware_2.2.2_all.deb'.
+dpkg-deb: building package 'linux-focal-root-current-orangepir1plus-lts' in '/home/atusi/build/orangepi-build-r1-plus-lts/.tmp/focal/linux-focal-root-current-orangepir1plus-lts_2.2.2_arm64.deb'.
+Hit:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports focal InRelease
+Hit:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports focal-security InRelease
+Hit:3 http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports focal-updates InRelease
+Hit:4 http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports focal-backports InRelease
+Reading package lists...
+Selecting previously unselected package ethtool.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15265 files and directories currently installed.)
+Preparing to unpack .../ethtool_1%3a5.4-1_arm64.deb ...
+Unpacking ethtool (1:5.4-1) ...
+Setting up ethtool (1:5.4-1) ...
+Selecting previously unselected package linux-u-boot-orangepir1plus-lts-current.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15277 files and directories currently installed.)
+Preparing to unpack .../linux-u-boot-current-orangepir1plus-lts_2.2.2_arm64.deb ...
+Unpacking linux-u-boot-orangepir1plus-lts-current (2.2.2) ...
+Setting up linux-u-boot-orangepir1plus-lts-current (2.2.2) ...
+Selecting previously unselected package linux-image-current-rockchip64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 15285 files and directories currently installed.)
+Preparing to unpack .../linux-image-current-rockchip64_2.2.2_arm64.deb ...
+Unpacking linux-image-current-rockchip64 (2.2.2) ...
+Setting up linux-image-current-rockchip64 (2.2.2) ...
+update-initramfs: Generating /boot/initrd.img-5.10.44-rockchip64
+W: Couldn't identify type of root file system for fsck hook
+Selecting previously unselected package linux-dtb-current-rockchip64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19492 files and directories currently installed.)
+Preparing to unpack .../linux-dtb-current-rockchip64_2.2.2_arm64.deb ...
+Unpacking linux-dtb-current-rockchip64 (2.2.2) ...
+Setting up linux-dtb-current-rockchip64 (2.2.2) ...
+Selecting previously unselected package distro-info-data.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19663 files and directories currently installed.)
+Preparing to unpack .../distro-info-data_0.43ubuntu1.11_all.deb ...
+Unpacking distro-info-data (0.43ubuntu1.11) ...
+Selecting previously unselected package lsb-release.
+Preparing to unpack .../lsb-release_11.1.0ubuntu2_all.deb ...
+Unpacking lsb-release (11.1.0ubuntu2) ...
+Selecting previously unselected package linux-focal-root-current-orangepir1plus-lts.
+Preparing to unpack .../linux-focal-root-current-orangepir1plus-lts_2.2.2_arm64.deb ...
+Unpacking linux-focal-root-current-orangepir1plus-lts (2.2.2) ...
+Setting up distro-info-data (0.43ubuntu1.11) ...
+Setting up lsb-release (11.1.0ubuntu2) ...
+Setting up linux-focal-root-current-orangepir1plus-lts (2.2.2) ...
+Created symlink /etc/systemd/system/sysinit.target.wants/orangepi-ramlog.service -> /lib/systemd/system/orangepi-ramlog.service.
+Processing triggers for initramfs-tools (0.136ubuntu6.7) ...
+update-initramfs: Generating /boot/initrd.img-5.10.44-rockchip64
+W: Couldn't identify type of root file system for fsck hook
+update-initramfs: Converting to u-boot format
+Selecting previously unselected package orangepi-firmware.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 19770 files and directories currently installed.)
+Preparing to unpack .../orangepi-firmware_2.2.2_all.deb ...
+Unpacking orangepi-firmware (2.2.2) ...
+Setting up orangepi-firmware (2.2.2) ...
+Running in chroot, ignoring request: daemon-reload
+Created symlink /etc/systemd/system/getty.target.wants/serial-getty@ttyS2.service → /lib/systemd/system/serial-getty@ttyS2.service.
+Running in chroot, ignoring request: daemon-reload
+Created symlink /etc/systemd/system/getty.target.wants/serial-getty@ttyGS0.service → /lib/systemd/system/serial-getty@.service.
+Removed /etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service.
+Keeping /boot/initrd.img-5.10.44-rockchip64.dpkg-bak
+update-initramfs: Generating /boot/initrd.img-5.10.44-rockchip64
+Copying module directory kernel/drivers/usb/host
+(excluding hwa-hc.ko sl811_cs.ko sl811-hcd.ko u132-hcd.ko whci-hcd.ko)
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/ssb/ssb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/ssb-hcd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/fotg210-hcd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/bcma/bcma.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/bcma-hcd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/max3421-hcd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/oxu210hp-hcd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/fsl-mph-dr-of.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/isp116x-hcd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/host/ehci-fsl.ko
+Copying module directory kernel/drivers/usb/dwc2
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/dwc2/dwc2_pci.ko
+Copying module directory kernel/drivers/usb/dwc3
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/dwc3/dwc3-meson-g12a.ko
+Copying module directory kernel/drivers/input/keyboard
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/iqs62x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/input/keyboard/iqs62x-keys.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/input/keyboard/adc-keys.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/input/keyboard/adp5520-keys.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/input/keyboard/sun4i-lradc-keys.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/input/keyboard/qt1050.ko
+Copying module directory kernel/drivers/hid
+(excluding hid-*ff.ko hid-a4tech.ko hid-cypress.ko hid-dr.ko hid-elecom.ko hid-gyration.ko hid-icade.ko hid-kensington.ko hid-kye.ko hid-lcpower.ko hid-magicmouse.ko hid-multitouch.ko hid-ntrig.ko hid-petalynx.ko hid-picolcd.ko hid-pl.ko hid-ps3remote.ko hid-quanta.ko hid-roccat-ko*.ko hid-roccat-pyra.ko hid-saitek.ko hid-sensor-hub.ko hid-sony.ko hid-speedlink.ko hid-tivo.ko hid-twinhan.ko hid-uclogic.ko hid-wacom.ko hid-waltop.ko hid-wiimote.ko hid-zydacron.ko)
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-alps.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-penmount.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-holtek-kbd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/char/hw_random/rng-core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-u2fzero.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-ortek.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-macally.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-elan.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-roccat-common.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-roccat.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-roccat-savu.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-roccat-ryos.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-glorious.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-gembird.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-mcp2221.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-viewsonic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-accutouch.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/wacom.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-appleir.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-led.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-ite.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-monterey.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-roccat-isku.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/sound/soundcore.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/sound/core/snd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/sound/core/snd-seq-device.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/sound/core/snd-rawmidi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-prodikeys.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-cougar.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-logitech-hidpp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-cherry.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-retrode.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-sunplus.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-cp2112.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/input/ff-memless.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-microsoft.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-google-hammer.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-jabra.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-topseed.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-logitech-dj.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-udraw-ps3.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-keytouch.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-lenovo.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-steelseries.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-belkin.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-ezkey.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-holtek-mouse.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-steam.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-cmedia.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/i2c-hid/i2c-hid.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-sensor-hub.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-sensor-custom.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/uhid.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-logitech.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-elo.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-chicony.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-sjoy.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-creative-sb0540.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-nti.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-apple.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-xinmo.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-gt683r.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-plantronics.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/input/rmi4/rmi_core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-rmi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-samsung.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-primax.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-lg-g15.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-redragon.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-gfrm.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-corsair.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-aureal.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-roccat-arvo.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-roccat-lua.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/hid/hid-maltron.ko
+Copying module directory kernel/drivers/bus
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/bus/sunxi-rsb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/bus/mhi/core/mhi.ko
+Copying module directory kernel/drivers/clk
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/clk/clk-si544.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/clk/clk-bd718x7.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/clk/meson/clk-phase.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/clk/meson/sclk-div.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/clk/meson/axg-audio.ko
+Copying module directory kernel/drivers/gpio
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-pisosr.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-gw-pld.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-adp5588.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/base/regmap/regmap-spi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-xra1403.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-max730x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-74x164.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-tqmx86.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-grgpio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-logicvc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-altera.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-pci-idio-16.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-max77650.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-amd-fch.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-bd71828.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-74xx-mmio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-hlwd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-tpic2810.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-max7301.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-dwapb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/crc8.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-max3191x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-rdc321x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-adnp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-max7300.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-pcie-idio-24.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-adp5520.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-cadence.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-mc33880.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-mb86s7x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-bt8xx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-bd70528.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-syscon.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-exar.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-max732x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-sama5d2-piobu.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-pcf857x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-ucb1400.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpio/gpio-mockup.ko
+Copying module directory kernel/drivers/i2c/busses
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-robotfuzz-osif.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-taos-evm.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-cbus-gpio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-tiny-usb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-mv64xxx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-meson.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-diolan-u2c.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/busses/i2c-cadence.ko
+Copying module directory kernel/drivers/i2c/muxes
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/i2c-mux.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-pca9541.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-mlxcpld.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-demux-pinctrl.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-arb-gpio-challenge.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-pca954x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-ltc4306.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-gpio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mux/mux-core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-gpmux.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-reg.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/i2c/muxes/i2c-mux-pinctrl.ko
+Copying module directory kernel/drivers/mfd
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/tqmx86.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/axp20x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/axp20x-rsb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/as3722.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/sound/ac97_bus.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/ucb1400_core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/stmfx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/wl1273-core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/lm3533-core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/lm3533-ctrlbank.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/sun4i-gpadc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/rohm-bd70528.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/rdc321x-southbridge.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/ac100.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/rt5033.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/vx855.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/max77650.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/rave-sp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/rohm-bd71828.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mfd/rn5t618.ko
+Copying module directory kernel/drivers/phy
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/freescale/phy-fsl-imx8mq-usb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/freescale/phy-fsl-imx8-mipi-dphy.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/allwinner/phy-sun4i-usb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/allwinner/phy-sun50i-usb3.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/allwinner/phy-sun6i-mipi-dphy.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/allwinner/phy-sun9i-usb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/rockchip/phy-rockchip-inno-dsidphy.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/rockchip/phy-rockchip-dphy-rx0.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/amlogic/phy-meson-g12a-usb3-pcie.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/amlogic/phy-meson8b-usb2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/amlogic/phy-meson-g12a-usb2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/amlogic/phy-meson-gxl-usb2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/motorola/phy-mapphone-mdm6600.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/cadence/phy-cadence-sierra.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/cadence/phy-cadence-torrent.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/phy/cadence/cdns-dphy.ko
+Copying module directory kernel/drivers/pinctrl
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/pinctrl/pinctrl-as3722.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/pinctrl/pinctrl-stmfx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/pinctrl/pinctrl-axp209.ko
+Copying module directory kernel/drivers/regulator
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/as3722-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/rt5033-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/axp20x-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/max77650-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/as3711-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/rc5t583-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/sy8824x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/88pg86x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/mp5416.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/mp886x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/mp8859.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/aat2870-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/rohm-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/mcp16502.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/mpq7920.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/bd71828-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/rn5t618-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/bd70528-regulator.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/regulator/slg51000-regulator.ko
+Copying module directory kernel/drivers/spi
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-dw.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-meson-spicc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-axi-spi-engine.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spidev.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-mxic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-cadence.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-tle62x0.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-bitbang.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-gpio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-oc-tiny.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-fsl-lib.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-dw-pci.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-loopback-test.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-sun6i.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-mux.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-meson-spifc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-nxp-fspi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-slave-system-control.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-fsl-spi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-altera.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-dw-mmio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-sun4i.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/spi/spi-slave-time.ko
+Copying module directory kernel/drivers/rtc
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-x1205.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-fm3130.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-m41t93.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-pcf2127.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-isl12026.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-ac100.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-ds1343.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-pcf85363.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-hid-sensor-time.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rv8803.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rs5c348.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rx8025.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rc5t583.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-ds1390.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rx8581.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-m41t80.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-mcp795.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-pcf85063.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-max6902.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-ds1302.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-ds3232.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-as3722.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rx4581.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-bq32k.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-r9701.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-sd3078.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-pcf8583.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-ds1305.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-cadence.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rc5t619.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rx6110.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rv3029c2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-pcf2123.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-s5m.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/watchdog/bd70528_wdt.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-bd70528.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-ds1347.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rx8010.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-pcf8523.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-max6916.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-em3027.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-rv3028.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-m41t94.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-s35390a.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-meson-vrtc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/rtc/rtc-pcf8563.ko
+Copying module directory kernel/drivers/net
+(excluding appletalk arcnet bonding can dummy.ko hamradio hippi ifb.ko irda macvlan.ko macvtap.ko pcmcia sb1000.ko team tokenring tun.ko usb veth.ko wan wimax wireless xen-netback.ko)
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/meson-gxl.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/lxt.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/icplus.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/national.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/qsemi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/microchip_t1.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/ax88796b.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/marvell10g.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/bcm-phy-lib.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/bcm7xxx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/marvell.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-i2c.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/sfp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/cicada.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/dp83869.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/amd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/realtek.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/dp83tc811.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/bcm87xx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/davicom.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/at803x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/dp83640.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/vitesse.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/dp83848.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/aquantia.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/broadcom.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/smsc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/microchip.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/motorcomm.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/bcm84881.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/adin.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/phy/et1011c.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/core/failover.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/net_failover.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/vmxnet3/vmxnet3.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/macsec.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/slip/slhc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/slip/slip.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/ppp_generic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/pppox.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/crypto/libarc4.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/ppp_mppe.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/ppp_deflate.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/pppoe.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/ppp_synctty.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/ppp_async.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/ipv4/gre.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/pptp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ppp/bsd_comp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/netdevsim/netdevsim.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ipvlan/ipvlan.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/tap.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ipvlan/ipvtap.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/netconsole.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/xen-netfront.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/pcs/pcs-xpcs.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/ieee802154/ieee802154.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/mac802154/mac802154.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/cc2520.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/at86rf230.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/mac802154_hwsim.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/fakelb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/mrf24j40.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/atusb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/adf7242.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/mcr20a.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ieee802154/ca8210.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/crypto/libblake2s-generic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/crypto/libcurve25519-generic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/crypto/libblake2s.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/ipv4/udp_tunnel.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/ipv6/ip6_udp_tunnel.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/arch/arm64/crypto/poly1305-neon.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/crypto/libchacha20poly1305.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/wireguard/wireguard.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/vrf.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/geneve.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/gtp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/eql.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/virtio_net.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/marvell/octeontx2/af/octeontx2_mbox.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/marvell/octeontx2/nic/octeontx2_nicpf.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/marvell/octeontx2/nic/octeontx2_nicvf.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/stmmac.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/stmmac-platform.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-sun8i.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-meson8b.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-sunxi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-meson.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-rk.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-generic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/pensando/ionic/ionic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/qualcomm/qca_7k_common.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/qualcomm/qcauart.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/qualcomm/emac/qcom-emac.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/bnx2x/bnx2x.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/tg3.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/bridge/bridge.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/dsa/dsa_core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/bcmsysport.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/genet/genet.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/b44.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/bnxt/bnxt_en.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/uio/uio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/cnic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/broadcom/bnx2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/atheros/atl1e/atl1e.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/atheros/atl1c/atl1c.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/atheros/alx/alx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/atheros/atlx/atl1.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/atheros/atlx/atl2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/xilinx/ll_temac.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/xilinx/xilinx_emac.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/mscc/mscc_ocelot_switch_lib.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/mscc/mscc_ocelot.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/microchip/enc28j60.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/allwinner/sun4i-emac.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/rocker/rocker.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/brocade/bna/bna.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/dlink/dl2k.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/realtek/r8169.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/ethernet/aquantia/atlantic/atlantic.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/lan9303-core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/dsa_loop.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/b53/b53_common.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/bcm-sf2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/qca/ar9331.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/dsa/tag_8021q.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/sja1105/sja1105.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/lan9303_mdio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/b53/b53_serdes.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/b53/b53_srab.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/b53/b53_spi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/b53/b53_mdio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/b53/b53_mmap.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/mv88e6060.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/lantiq_gswip.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/mv88e6xxx/mv88e6xxx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/microchip/ksz_common.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/microchip/ksz8795.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/microchip/ksz8795_spi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/microchip/ksz9477.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/microchip/ksz9477_i2c.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/microchip/ksz9477_spi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/vitesse-vsc73xx-core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/vitesse-vsc73xx-platform.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/lan9303_i2c.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/vitesse-vsc73xx-spi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/qca8k.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/realtek-smi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/dsa/mt7530.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-mvusb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-sun4i.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-bcm-unimac.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-ipq8064.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-mux-meson-g12a.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-mux-multiplexer.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/mdio/mdio-mscc-miim.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/vxlan.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/net/nlmon.ko
+Copying module directory kernel/drivers/scsi
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/fdomain.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/cdrom/cdrom.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/sr_mod.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/scsi_transport_iscsi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/fdomain_pci.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/sg.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/libiscsi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/libiscsi_tcp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/scsi/iscsi_tcp.ko
+Copying module directory kernel/drivers/block
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/nbd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/sx8.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/zram/zram.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/brd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/xen-blkback/xen-blkback.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/aoe/aoe.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/ceph/libceph.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/rbd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/lru_cache.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/drbd/drbd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/rsxx/rsxx.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/umem.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/cryptoloop.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/block/skd.ko
+Copying module directory kernel/drivers/nvme
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/nvme/host/nvme-fabrics.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/nvme/host/nvme-fc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/nvme/target/nvmet.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/nvme/target/nvme-loop.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/nvme/target/nvmet-fc.ko
+Copying module directory kernel/drivers/ata
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/ata/ahci_sunxi.ko
+Copying module directory kernel/drivers/mmc
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/meson-gx-mmc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/sdhci_am654.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/dw_mmc-hi3798cv200.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/meson-mx-sdio.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/mmc_hsq.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/misc/cardreader/rtsx_usb.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/rtsx_usb_sdmmc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/sdhci-of-aspeed.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/sunxi-mmc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/misc/cardreader/rtsx_pci.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/rtsx_pci_sdmmc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/misc/cardreader/alcor_pci.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/alcor.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/host/sdhci-milbeaut.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/mmc/core/pwrseq_sd8787.ko
+Copying module directory kernel/drivers/usb/storage
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-onetouch.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-sddr55.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-eneub6250.ko
+Adding firmware /lib/firmware/ene-ub6250/ms_rdwr.bin
+Adding firmware /lib/firmware/ene-ub6250/msp_rdwr.bin
+Adding firmware /lib/firmware/ene-ub6250/ms_init.bin
+Adding firmware /lib/firmware/ene-ub6250/sd_rdwr.bin
+Adding firmware /lib/firmware/ene-ub6250/sd_init2.bin
+Adding firmware /lib/firmware/ene-ub6250/sd_init1.bin
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-usbat.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-karma.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-datafab.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-realtek.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-alauda.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/uas.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-sddr09.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-jumpshot.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-freecom.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-cypress.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/usb/storage/ums-isd200.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/isofs/isofs.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/jfs/jfs.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/reiserfs/reiserfs.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/udf/udf.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/xfs/xfs.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/fscache/fscache.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nfs_common/nfs_ssc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/net/sunrpc/sunrpc.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nfs_common/grace.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/lockd/lockd.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nfs/nfs.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nfs/nfsv2.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nfs_common/nfs_acl.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nfs/nfsv3.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nfs/nfsv4.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/fs/nls/nls_iso8859-1.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/power/supply/axp20x_usb_power.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/drm_panel_orientation_quirks.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/drm.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/media/rc/rc-core.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/media/cec/core/cec.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/drm_kms_helper.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/bridge/analogix/analogix_dp.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/bridge/synopsys/dw-mipi-dsi.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/rockchip/rockchipdrm.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/pwm/pwm-cros-ec.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/video/backlight/pwm_bl.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/gpu/drm/panel/panel-simple.ko
+Adding module /lib/modules/5.10.44-rockchip64/kernel/lib/842/842_decompress.ko
+Adding binary /usr/lib/initramfs-tools/bin/wait-for-root
+Adding library-link /usr/lib/aarch64-linux-gnu/libudev.so.1.6.17
+Adding library /usr/lib/aarch64-linux-gnu/libudev.so.1.6.17
+Adding library-link /usr/lib/aarch64-linux-gnu/libc-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/libc-2.31.so
+Adding library-link /usr/lib/aarch64-linux-gnu/ld-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/ld-2.31.so
+Adding binary /lib/libgcc_s.so.1
+Adding library-link /usr/lib/aarch64-linux-gnu/libpthread-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/libpthread-2.31.so
+Adding binary-link /usr/bin/kmod
+Adding binary /usr/bin/kmod
+Adding library-link /usr/lib/aarch64-linux-gnu/libzstd.so.1.4.4
+Adding library /usr/lib/aarch64-linux-gnu/libzstd.so.1.4.4
+Adding library-link /usr/lib/aarch64-linux-gnu/liblzma.so.5.2.4
+Adding library /usr/lib/aarch64-linux-gnu/liblzma.so.5.2.4
+Adding library /lib/aarch64-linux-gnu/libcrypto.so.1.1
+Adding library-link /usr/lib/aarch64-linux-gnu/libdl-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/libdl-2.31.so
+Adding binary-link /usr/bin/kmod
+Adding config /etc/modprobe.d/blacklist-ath_pci.conf
+Adding config /etc/modprobe.d/blacklist-firewire.conf
+Adding config /etc/modprobe.d/blacklist-framebuffer.conf
+Adding config /etc/modprobe.d/blacklist-orangepir1plus-lts.conf
+Adding config /etc/modprobe.d/blacklist-rare-network.conf
+Adding config /etc/modprobe.d/blacklist.conf
+Adding config /etc/modprobe.d/iwlwifi.conf
+Adding config /etc/modprobe.d/r8723bs.conf
+Adding config /lib/modprobe.d/aliases.conf
+Adding config /lib/modprobe.d/fbdev-blacklist.conf
+Adding config /lib/modprobe.d/systemd.conf
+Calling hook compcache
+Calling hook fsck
+Adding binary /sbin/fsck
+Adding library-link /usr/lib/aarch64-linux-gnu/libmount.so.1.1.0
+Adding library /usr/lib/aarch64-linux-gnu/libmount.so.1.1.0
+Adding library-link /usr/lib/aarch64-linux-gnu/libblkid.so.1.1.0
+Adding library /usr/lib/aarch64-linux-gnu/libblkid.so.1.1.0
+Adding library /lib/aarch64-linux-gnu/libselinux.so.1
+Adding library-link /usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.9.0
+Adding library /usr/lib/aarch64-linux-gnu/libpcre2-8.so.0.9.0
+Adding binary /sbin/logsave
+Adding binary-link /usr/sbin/e2fsck
+Adding binary /usr/sbin/e2fsck
+Adding library-link /usr/lib/aarch64-linux-gnu/libext2fs.so.2.4
+Adding library /usr/lib/aarch64-linux-gnu/libext2fs.so.2.4
+Adding library-link /usr/lib/aarch64-linux-gnu/libcom_err.so.2.1
+Adding library /usr/lib/aarch64-linux-gnu/libcom_err.so.2.1
+Adding library-link /usr/lib/aarch64-linux-gnu/libuuid.so.1.3.0
+Adding library /usr/lib/aarch64-linux-gnu/libuuid.so.1.3.0
+Adding library-link /usr/lib/aarch64-linux-gnu/libe2p.so.2.3
+Adding library /usr/lib/aarch64-linux-gnu/libe2p.so.2.3
+Calling hook kmod
+Calling hook resume
+Calling hook thermal
+Calling hook udev
+Adding binary /lib/systemd/systemd-udevd
+Adding library-link /usr/lib/aarch64-linux-gnu/libkmod.so.2.3.5
+Adding library /usr/lib/aarch64-linux-gnu/libkmod.so.2.3.5
+Adding library-link /usr/lib/aarch64-linux-gnu/libacl.so.1.1.2253
+Adding library /usr/lib/aarch64-linux-gnu/libacl.so.1.1.2253
+Adding binary /bin/udevadm
+Adding binary /lib/udev/ata_id
+Adding binary /lib/udev/scsi_id
+Adding binary /sbin/blkid
+Calling hook zz-busybox-initramfs
+Adding binary /usr/lib/initramfs-tools/bin/busybox
+Calling hook zz-dhclient
+Adding binary /bin/run-parts
+Adding binary /sbin/dhclient
+Adding library-link /usr/lib/aarch64-linux-gnu/libdns-export.so.1109.0.1
+Adding library /usr/lib/aarch64-linux-gnu/libdns-export.so.1109.0.1
+Adding library-link /usr/lib/aarch64-linux-gnu/libisc-export.so.1105.0.0
+Adding library /usr/lib/aarch64-linux-gnu/libisc-export.so.1105.0.0
+Adding binary /sbin/dhclient-script
+Calling hook console_setup
+Calling hook kbd
+Adding binary /bin/setfont
+Adding binary /bin/kbd_mode
+Adding binary /bin/loadkeys
+Calling hook fixrtc
+Adding binary /sbin/dumpe2fs
+Calling hook dmsetup
+Adding binary /sbin/dmsetup
+Adding library /lib/aarch64-linux-gnu/libdevmapper.so.1.02.1
+Adding library-link /usr/lib/aarch64-linux-gnu/libm-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/libm-2.31.so
+Adding module /lib/modules/5.10.44-rockchip64/kernel/drivers/md/dm-mod.ko
+Calling hook klibc-utils
+/usr/share/initramfs-tools/scripts/init-top/ORDER ignored: not executable
+/usr/share/initramfs-tools/scripts/local-premount/ORDER ignored: not executable
+/usr/share/initramfs-tools/scripts/init-bottom/ORDER ignored: not executable
+/usr/share/initramfs-tools/scripts/panic/ORDER ignored: not executable
+dns: libnss_files: /lib/aarch64-linux-gnu/libnss_files.so.2
+Adding library-link /usr/lib/aarch64-linux-gnu/libnss_files-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/libnss_files-2.31.so
+dns: libnss_dns: /lib/aarch64-linux-gnu/libnss_dns.so.2
+Adding library-link /usr/lib/aarch64-linux-gnu/libnss_dns-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/libnss_dns-2.31.so
+dns: libresolv: /lib/aarch64-linux-gnu/libresolv.so.2
+Adding library-link /usr/lib/aarch64-linux-gnu/libresolv-2.31.so
+Adding library /usr/lib/aarch64-linux-gnu/libresolv-2.31.so
+Building cpio /boot/initrd.img-5.10.44-rockchip64.new initramfs
+update-initramfs: Converting to u-boot format

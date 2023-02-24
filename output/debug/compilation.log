@@ -1,0 +1,2500 @@
+
+	== u-boot ==
+
+.config:1827:warning: override: reassigning to symbol BOOTDELAY
+/home/atusi/build/orangepi-build-r1-plus-lts/u-boot/v2020.10-rockchip64/scripts/dtc/pylibfdt/setup.py:21: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+  from distutils.core import setup, Extension
+scripts/dtc/libfdt/fdt.c: In function ‘fdt_offset_ptr’:
+scripts/dtc/libfdt/fdt.c:137:32: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+  137 |                 if ((absoffset < offset)
+      |                                ^
+scripts/dtc/libfdt/fdt.c:143:37: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+  143 |                 if (((offset + len) < offset)
+      |                                     ^
+scripts/dtc/libfdt/fdt.c: In function ‘fdt_move’:
+scripts/dtc/libfdt/fdt.c:307:32: warning: comparison of integer expressions of different signedness: ‘uint32_t’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  307 |         if (fdt_totalsize(fdt) > bufsize)
+      |                                ^
+scripts/dtc/libfdt/fdt_overlay.c: In function ‘overlay_update_local_node_references’:
+scripts/dtc/libfdt/fdt_overlay.c:253:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  253 |                 for (i = 0; i < (fixup_len / sizeof(uint32_t)); i++) {
+      |                               ^
+scripts/dtc/libfdt/fdt_ro.c: In function ‘fdt_get_string’:
+scripts/dtc/libfdt/fdt_ro.c:56:23: warning: comparison of integer expressions of different signedness: ‘uint32_t’ {aka ‘unsigned int’} and ‘int32_t’ {aka ‘int’} [-Wsign-compare]
+   56 |         if (absoffset >= totalsize)
+      |                       ^~
+scripts/dtc/libfdt/fdt_ro.c:64:39: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   64 |                         if (stroffset >= fdt_size_dt_strings(fdt))
+      |                                       ^~
+scripts/dtc/libfdt/fdt_ro.c:71:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   71 |                     || (stroffset < -fdt_size_dt_strings(fdt)))
+      |                                   ^
+scripts/dtc/libfdt/fdt_ro.c:73:34: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+   73 |                 if ((-stroffset) < len)
+      |                                  ^
+scripts/dtc/libfdt/fdt_ro.c: In function ‘fdt_mem_rsv’:
+scripts/dtc/libfdt/fdt_ro.c:164:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+  164 |                 if (absoffset < fdt_off_mem_rsvmap(fdt))
+      |                               ^
+scripts/dtc/libfdt/fdt_ro.c:166:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+  166 |                 if (absoffset > fdt_totalsize(fdt) -
+      |                               ^
+scripts/dtc/libfdt/fdt_ro.c: In function ‘fdt_node_offset_by_phandle’:
+scripts/dtc/libfdt/fdt_ro.c:682:40: warning: comparison of integer expressions of different signedness: ‘uint32_t’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  682 |         if ((phandle == 0) || (phandle == -1))
+      |                                        ^~
+scripts/dtc/libfdt/fdt_strerror.c: In function ‘fdt_strerror’:
+scripts/dtc/libfdt/fdt_strerror.c:51:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+   51 |         else if (errval > -FDT_ERRTABSIZE) {
+      |                         ^
+scripts/dtc/libfdt/fdt_sw.c: In function ‘fdt_grab_space_’:
+scripts/dtc/libfdt/fdt_sw.c:105:27: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  105 |         if ((offset + len < offset) || (offset + len > spaceleft))
+      |                           ^
+scripts/dtc/libfdt/fdt_sw.c:105:54: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  105 |         if ((offset + len < offset) || (offset + len > spaceleft))
+      |                                                      ^
+scripts/dtc/libfdt/fdt_sw.c: In function ‘fdt_create_with_flags’:
+scripts/dtc/libfdt/fdt_sw.c:118:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  118 |         if (bufsize < hdrsize)
+      |                     ^
+scripts/dtc/libfdt/fdt_sw.c: In function ‘fdt_resize’:
+scripts/dtc/libfdt/fdt_sw.c:164:35: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+  164 |         if ((headsize + tailsize) > bufsize)
+      |                                   ^
+scripts/dtc/libfdt/fdt_sw.c: In function ‘fdt_add_string_’:
+scripts/dtc/libfdt/fdt_sw.c:258:41: warning: comparison of integer expressions of different signedness: ‘uint32_t’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+  258 |         if (fdt_totalsize(fdt) + offset < struct_top)
+      |                                         ^
+scripts/dtc/libfdt/fdt_wip.c: In function ‘fdt_setprop_inplace_namelen_partial’:
+scripts/dtc/libfdt/fdt_wip.c:26:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘uint32_t’ {aka ‘unsigned int’} [-Wsign-compare]
+   26 |         if (proplen < (len + idx))
+      |                     ^
+tools/imx8image.c: In function ‘copy_file.constprop’:
+tools/imx8image.c:414:21: warning: ‘write’ reading 5 bytes from a region of size 4 [-Wstringop-overread]
+  414 |                 if (write(ifd, (char *)&zero, 4 - tail) != 4 - tail) {
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tools/imx8image.c:368:13: note: source object ‘zero’ of size 4
+  368 |         int zero = 0;
+      |             ^~~~
+In file included from ./tools/imagetool.h:21,
+                 from include/imx8image.h:13,
+                 from tools/imx8image.c:8:
+/usr/include/unistd.h:378:16: note: in a call to function ‘write’ declared with attribute ‘access (read_only, 2, 3)’
+  378 | extern ssize_t write (int __fd, const void *__buf, size_t __n) __wur
+      |                ^~~~~
+tools/imx8mimage.c: In function ‘copy_file.constprop’:
+tools/imx8mimage.c:291:21: warning: ‘write’ reading 5 bytes from a region of size 4 [-Wstringop-overread]
+  291 |                 if (write(ifd, (char *)&zero, 4 - tail) != 4 - tail) {
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tools/imx8mimage.c:249:13: note: source object ‘zero’ of size 4
+  249 |         int zero = 0;
+      |             ^~~~
+In file included from tools/imagetool.h:21,
+                 from tools/imx8mimage.c:9:
+/usr/include/unistd.h:378:16: note: in a call to function ‘write’ declared with attribute ‘access (read_only, 2, 3)’
+  378 | extern ssize_t write (int __fd, const void *__buf, size_t __n) __wur
+      |                ^~~~~
+
+	== kernel ==
+
+scripts/sign-file.c: In function ‘display_openssl_errors’:
+scripts/sign-file.c:89:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   89 |         while ((e = ERR_get_error_line(&file, &line))) {
+      |         ^~~~~
+In file included from scripts/sign-file.c:29:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+scripts/sign-file.c: In function ‘drain_openssl_errors’:
+scripts/sign-file.c:102:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  102 |         while (ERR_get_error_line(&file, &line)) {}
+      |         ^~~~~
+In file included from scripts/sign-file.c:29:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+scripts/sign-file.c: In function ‘read_private_key’:
+scripts/sign-file.c:142:17: warning: ‘ENGINE_load_builtin_engines’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  142 |                 ENGINE_load_builtin_engines();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from scripts/sign-file.c:30:
+/usr/include/openssl/engine.h:358:28: note: declared here
+  358 | OSSL_DEPRECATEDIN_3_0 void ENGINE_load_builtin_engines(void);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+scripts/sign-file.c:144:17: warning: ‘ENGINE_by_id’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  144 |                 e = ENGINE_by_id("pkcs11");
+      |                 ^
+In file included from scripts/sign-file.c:30:
+/usr/include/openssl/engine.h:336:31: note: declared here
+  336 | OSSL_DEPRECATEDIN_3_0 ENGINE *ENGINE_by_id(const char *id);
+      |                               ^~~~~~~~~~~~
+scripts/sign-file.c:146:17: warning: ‘ENGINE_init’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  146 |                 if (ENGINE_init(e))
+      |                 ^~
+In file included from scripts/sign-file.c:30:
+/usr/include/openssl/engine.h:620:27: note: declared here
+  620 | OSSL_DEPRECATEDIN_3_0 int ENGINE_init(ENGINE *e);
+      |                           ^~~~~~~~~~~
+scripts/sign-file.c:151:25: warning: ‘ENGINE_ctrl_cmd_string’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  151 |                         ERR(!ENGINE_ctrl_cmd_string(e, "PIN", key_pass, 0),
+      |                         ^~~
+In file included from scripts/sign-file.c:30:
+/usr/include/openssl/engine.h:479:5: note: declared here
+  479 | int ENGINE_ctrl_cmd_string(ENGINE *e, const char *cmd_name, const char *arg,
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+scripts/sign-file.c:153:17: warning: ‘ENGINE_load_private_key’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  153 |                 private_key = ENGINE_load_private_key(e, private_key_name,
+      |                 ^~~~~~~~~~~
+In file included from scripts/sign-file.c:30:
+/usr/include/openssl/engine.h:638:11: note: declared here
+  638 | EVP_PKEY *ENGINE_load_private_key(ENGINE *e, const char *key_id,
+      |           ^~~~~~~~~~~~~~~~~~~~~~~
+scripts/extract-cert.c: In function ‘display_openssl_errors’:
+scripts/extract-cert.c:46:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   46 |         while ((e = ERR_get_error_line(&file, &line))) {
+      |         ^~~~~
+In file included from scripts/extract-cert.c:23:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+scripts/extract-cert.c: In function ‘drain_openssl_errors’:
+scripts/extract-cert.c:59:9: warning: ‘ERR_get_error_line’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   59 |         while (ERR_get_error_line(&file, &line)) {}
+      |         ^~~~~
+In file included from scripts/extract-cert.c:23:
+/usr/include/openssl/err.h:411:15: note: declared here
+  411 | unsigned long ERR_get_error_line(const char **file, int *line);
+      |               ^~~~~~~~~~~~~~~~~~
+scripts/extract-cert.c: In function ‘main’:
+scripts/extract-cert.c:124:17: warning: ‘ENGINE_load_builtin_engines’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  124 |                 ENGINE_load_builtin_engines();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:358:28: note: declared here
+  358 | OSSL_DEPRECATEDIN_3_0 void ENGINE_load_builtin_engines(void);
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+scripts/extract-cert.c:126:17: warning: ‘ENGINE_by_id’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  126 |                 e = ENGINE_by_id("pkcs11");
+      |                 ^
+In file included from scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:336:31: note: declared here
+  336 | OSSL_DEPRECATEDIN_3_0 ENGINE *ENGINE_by_id(const char *id);
+      |                               ^~~~~~~~~~~~
+scripts/extract-cert.c:128:17: warning: ‘ENGINE_init’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  128 |                 if (ENGINE_init(e))
+      |                 ^~
+In file included from scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:620:27: note: declared here
+  620 | OSSL_DEPRECATEDIN_3_0 int ENGINE_init(ENGINE *e);
+      |                           ^~~~~~~~~~~
+scripts/extract-cert.c:133:25: warning: ‘ENGINE_ctrl_cmd_string’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  133 |                         ERR(!ENGINE_ctrl_cmd_string(e, "PIN", key_pass, 0), "Set PKCS#11 PIN");
+      |                         ^~~
+In file included from scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:479:5: note: declared here
+  479 | int ENGINE_ctrl_cmd_string(ENGINE *e, const char *cmd_name, const char *arg,
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+scripts/extract-cert.c:134:17: warning: ‘ENGINE_ctrl_cmd’ is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+  134 |                 ENGINE_ctrl_cmd(e, "LOAD_CERT_CTRL", 0, &parms, NULL, 1);
+      |                 ^~~~~~~~~~~~~~~
+In file included from scripts/extract-cert.c:24:
+/usr/include/openssl/engine.h:450:27: note: declared here
+  450 | OSSL_DEPRECATEDIN_3_0 int ENGINE_ctrl_cmd(ENGINE *e, const char *cmd_name,
+      |                           ^~~~~~~~~~~~~~~
+scripts/Makefile.lib:8: 'always' is deprecated. Please use 'always-y' instead
+arch/arm64/boot/dts/rockchip/overlay/rockchip-spi-spidev.dts:22.11-27.6: Warning (spi_bus_reg): /fragment@1/__overlay__/spidev: SPI bus unit address format error, expected "0"
+arch/arm64/boot/dts/rockchip/overlay/rockchip-spi-spidev.dts:36.11-41.6: Warning (spi_bus_reg): /fragment@2/__overlay__/spidev: SPI bus unit address format error, expected "0"
+arch/arm64/boot/dts/rockchip/overlay/rockchip-spi-spidev.dts:50.11-55.6: Warning (spi_bus_reg): /fragment@3/__overlay__/spidev: SPI bus unit address format error, expected "0"
+arch/arm64/boot/dts/rockchip/overlay/rockchip-spi-spidev.dts:64.11-69.6: Warning (spi_bus_reg): /fragment@4/__overlay__/spidev: SPI bus unit address format error, expected "0"
+drivers/tty/vt/keyboard.c:27: warning: "pr_fmt" redefined
+   27 | #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
+      | 
+In file included from ./include/linux/kernel.h:16,
+                 from ./include/linux/list.h:9,
+                 from ./include/linux/kprobes.h:21,
+                 from ./include/linux/kgdb.h:19,
+                 from ./include/linux/fb.h:5,
+                 from ./include/linux/bootsplash.h:13,
+                 from drivers/tty/vt/keyboard.c:26:
+./include/linux/printk.h:301: note: this is the location of the previous definition
+  301 | #define pr_fmt(fmt) fmt
+      | 
+drivers/net/wireless/rtl8189es/core/rtw_mlme_ext.c: In function ‘mgt_dispatcher’:
+drivers/net/wireless/rtl8189es/core/rtw_mlme_ext.c:1093:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1093 |    if(check_fwstate(pmlmepriv, WIFI_AP_STATE) == _TRUE)
+      |      ^
+drivers/net/wireless/rtl8189es/core/rtw_mlme_ext.c:1098:3: note: here
+ 1098 |   case WIFI_ASSOCREQ:
+      |   ^~~~
+drivers/net/wireless/rtl8189fs/core/rtw_mlme_ext.c: In function ‘mgt_dispatcher’:
+drivers/net/wireless/rtl8189fs/core/rtw_mlme_ext.c:1187:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1187 |    if(check_fwstate(pmlmepriv, WIFI_AP_STATE) == _TRUE)
+      |      ^
+drivers/net/wireless/rtl8189fs/core/rtw_mlme_ext.c:1192:3: note: here
+ 1192 |   case WIFI_ASSOCREQ:
+      |   ^~~~
+drivers/net/wireless/rtl8189es/core/rtw_iol.c: In function ‘rtw_IOL_cmd_buf_dump’:
+drivers/net/wireless/rtl8189es/core/rtw_iol.c:261:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  261 |   if(j%32 ==0) printk("\n");j++;
+      |   ^~
+drivers/net/wireless/rtl8189es/core/rtw_iol.c:261:29: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  261 |   if(j%32 ==0) printk("\n");j++;
+      |                             ^
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_write_reg’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:51:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+   51 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_read_reg’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:133:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  133 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_write_rf’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:264:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  264 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_read_rf’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:306:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  306 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_rate’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:444:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  444 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_channel’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:491:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  491 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_txpower_index’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:545:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  545 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_txpower’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:570:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  570 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_ant_tx’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:608:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  608 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_ant_rx’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:654:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  654 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_disable_bt_coexist’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:822:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  822 |  u8 input[wrqu->data.length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_arx’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:860:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  860 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_pwrtrk’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:1017:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1017 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_psd’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:1055:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1055 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_dump’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:1155:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1155 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_phypara’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:1181:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1181 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_SetRFPath’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:1207:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1207 |  char input[wrqu->data.length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_QueryDrv’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:1234:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1234 |  char input[wrqu->data.length];
+      |  ^~~~
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_PwrCtlDM’:
+drivers/net/wireless/rtl8189es/os_dep/linux/ioctl_mp.c:1263:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1263 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_write_reg’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:51:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+   51 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_read_reg’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:133:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  133 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_write_rf’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:265:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  265 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_read_rf’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:307:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  307 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_rate’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:449:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  449 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_channel’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:497:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  497 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_txpower_index’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:551:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  551 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_txpower’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:576:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  576 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_ant_tx’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:614:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  614 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_ant_rx’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:660:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  660 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_disable_bt_coexist’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:836:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  836 |  u8 input[wrqu->data.length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_arx’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:874:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  874 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_pwrtrk’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:1037:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1037 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_psd’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:1075:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1075 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_dump’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:1175:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1175 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_phypara’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:1201:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1201 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_SetRFPath’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:1227:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1227 |  char input[wrqu->data.length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_QueryDrv’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:1254:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1254 |  char input[wrqu->data.length];
+      |  ^~~~
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_PwrCtlDM’:
+drivers/net/wireless/rtl8189fs/os_dep/linux/ioctl_mp.c:1283:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1283 |  u8  input[wrqu->length];
+      |  ^~
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_cmd.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_cmd.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_security.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_security.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_debug.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_debug.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_io.c:47:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_io.c:47:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ioctl_query.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ioctl_query.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ioctl_set.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ioctl_set.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ieee80211.c:20:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ieee80211.c:20:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mlme.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mlme.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mlme_ext.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mlme_ext.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mi.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mi.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_wlan_util.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_wlan_util.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_vht.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_vht.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_pwrctrl.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_pwrctrl.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rf.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rf.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_recv.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_recv.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_sta_mgt.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_sta_mgt.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ap.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_ap.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_xmit.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_xmit.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rson.c:22:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rson.c:22:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_p2p.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_p2p.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_tdls.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_tdls.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_br_ext.c:27:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_br_ext.c:27:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_iol.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_iol.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_sreset.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_sreset.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_btcoex_wifionly.c:15:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_btcoex_wifionly.c:15:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_btcoex.c:15:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_btcoex.c:15:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_beamforming.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_beamforming.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/include/rtw_odm.h:18,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_odm.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/include/rtw_odm.h:18,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_odm.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rm.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rm.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rm_fsm.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_rm_fsm.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/osdep_service.c:19:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/osdep_service.c:19:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/efuse/rtw_efuse.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/efuse/rtw_efuse.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/os_intfs.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/os_intfs.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/usb_intf.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/usb_intf.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/usb_ops_linux.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/usb_ops_linux.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_linux.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_linux.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/xmit_linux.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/xmit_linux.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/mlme_linux.c:19:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/mlme_linux.c:19:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/recv_linux.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/recv_linux.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_cfg80211.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_cfg80211.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/rtw_cfgvendor.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/rtw_cfgvendor.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/wifi_regd.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/wifi_regd.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/rtw_android.c:20:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/rtw_android.c:20:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/rtw_proc.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/rtw_proc.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_write_reg’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:46:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+   46 |  char input[wrqu->length + 1];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_read_reg’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:132:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  132 |  char input[wrqu->length + 1];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_write_rf’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:266:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  266 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_read_rf’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:308:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  308 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_rate’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:413:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  413 |  u8  input[wrqu->length + 1];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_channel’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:463:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  463 |  u8  input[wrqu->length + 1];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_ch_offset’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:490:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  490 |  u8  input[wrqu->length + 1];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_bandwidth’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:517:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  517 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_txpower_index’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:550:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  550 |  char input[wrqu->length + 1];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_txpower’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:596:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  596 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_ant_tx’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:634:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  634 |  u8  input[wrqu->length + 1];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_ant_rx’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:682:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  682 |  u8  input[wrqu->length + 1];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_disable_bt_coexist’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:862:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  862 |  u8 input[wrqu->data.length + 1];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_arx’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:900:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+  900 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_pwrtrk’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1085:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1085 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_psd’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1123:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1123 |  u8  input[wrqu->length + 1];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_dump’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1244:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1244 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_phypara’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1268:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1268 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_SetRFPath’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1294:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1294 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_switch_rf_path’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1345:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1345 |  char input[wrqu->length];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_QueryDrv’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1394:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1394 |  char input[wrqu->data.length];
+      |  ^~~~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_PwrCtlDM’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:1423:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 1423 |  u8  input[wrqu->length];
+      |  ^~
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c: In function ‘rtw_mp_hwtx’:
+drivers/net/wireless/rtl8811cu/os_dep/linux/ioctl_mp.c:2073:2: warning: ISO C90 forbids variable length array ‘input’ [-Wvla]
+ 2073 |  u8  input[wrqu->data.length];
+      |  ^~
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_intf.c:18:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_intf.c:18:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_com.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_com.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_com_phycfg.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_com_phycfg.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_phy.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_phy.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_dm.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_dm.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_dm_acs.c:15:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_dm_acs.c:15:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/include/hal_btcoex_wifionly.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_btcoex_wifionly.c:15:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/include/hal_btcoex_wifionly.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_btcoex_wifionly.c:15:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_btcoex.c:19:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_btcoex.c:19:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_mp.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_mp.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_hci/hal_usb.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_hci/hal_usb.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/led/hal_led.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/led/hal_led.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_halmac.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/hal_halmac.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_halinit.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_halinit.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/led/hal_usb_led.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/led/hal_usb_led.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_cmd.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_cmd.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_mac.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_mac.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_phy.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_phy.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_dm.c:29:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_dm.c:29:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/hal8821c_fw.c:18:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/hal8821c_fw.c:18:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_ops.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/rtl8821c_ops.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_halinit.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/include/../hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/include/hal_data.h:20,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_halinit.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_halmac.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_halmac.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_io.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_io.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_xmit.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_xmit.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_recv.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_recv.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_led.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_led.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_ops.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/rtl8821c/usb/rtl8821cu_ops.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/efuse/rtl8821c/HalEfuseMask8821C_USB.c:19:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/efuse/rtl8821c/HalEfuseMask8821C_USB.c:19:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_debug.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_debug.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_antdiv.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_antdiv.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_soml.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_soml.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_antdect.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_antdect.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_smt_ant.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_smt_ant.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_interface.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_interface.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_phystatus.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_phystatus.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_hwconfig.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_hwconfig.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_dig.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_dig.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_pathdiv.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_pathdiv.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_rainfo.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_rainfo.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_dynamictxpower.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_dynamictxpower.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_adaptivity.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_adaptivity.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_cfotracking.c:26:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_cfotracking.c:26:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_noisemonitor.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_noisemonitor.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_beamforming.c:27:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_beamforming.c:27:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_dfs.c:33:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_dfs.c:33:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/txbf/halcomtxbf.c:21:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/txbf/halcomtxbf.c:21:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/txbf/haltxbfinterface.c:21:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/txbf/haltxbfinterface.c:21:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/txbf/phydm_hal_txbf_api.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/txbf/phydm_hal_txbf_api.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_adc_sampling.c:27:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_adc_sampling.c:27:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_ccx.c:27:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_ccx.c:27:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_psd.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_psd.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_primary_cca.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_primary_cca.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_cck_pd.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_cck_pd.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_rssi_monitor.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_rssi_monitor.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_auto_dbg.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_auto_dbg.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_math_lib.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_math_lib.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_api.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_api.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_pow_train.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_pow_train.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_lna_sat.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/phydm_lna_sat.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_debug.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_debug.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halphyrf_ce.c:26:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halphyrf_ce.c:26:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_powertracking_ce.c:31:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_powertracking_ce.c:31:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_powertracking.c:30:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_powertracking.c:30:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_kfree.c:29:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/halrf_kfree.c:29:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/halhwimg8821c_mac.c:28:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/halhwimg8821c_mac.c:28:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/halhwimg8821c_bb.c:28:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/halhwimg8821c_bb.c:28:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/halhwimg8821c_rf.c:28:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/halhwimg8821c_rf.c:28:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/phydm_hal_api8821c.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/phydm_hal_api8821c.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/phydm_regconfig8821c.c:17:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_types.h:197,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/../phydm_precomp.h:29,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/rtl8821c/phydm_regconfig8821c.c:17:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_8821c.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_8821c.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_iqk_8821c.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_iqk_8821c.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_iqk_8821c.c: In function ‘_iqk_reload_iqk_setting_8821c’:
+drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_iqk_8821c.c:579:49: warning: ‘~’ on a boolean expression [-Wbool-operation]
+  579 |     odm_set_bb_reg(dm, iqk_apply[path], BIT(0), ~(iqk_info->iqk_fail_report[channel][path][idx]));
+      |                                                 ^
+drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_iqk_8821c.c:579:49: note: did you mean to use logical not?
+  579 |     odm_set_bb_reg(dm, iqk_apply[path], BIT(0), ~(iqk_info->iqk_fail_report[channel][path][idx]));
+      |                                                 ^
+      |                                                 !
+drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_iqk_8821c.c:581:50: warning: ‘~’ on a boolean expression [-Wbool-operation]
+  581 |     odm_set_bb_reg(dm, iqk_apply[path], BIT(10), ~(iqk_info->iqk_fail_report[channel][path][idx]));
+      |                                                  ^
+drivers/net/wireless/rtl8811cu/hal/phydm/halrf/rtl8821c/halrf_iqk_8821c.c:581:50: note: did you mean to use logical not?
+  581 |     odm_set_bb_reg(dm, iqk_apply[path], BIT(10), ~(iqk_info->iqk_fail_report[channel][path][idx]));
+      |                                                  ^
+      |                                                  !
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/halbtc8821cwifionly.c:15:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/halbtc8821cwifionly.c:15:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/halbtc8821c1ant.c:15:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/halbtc8821c1ant.c:15:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/halbtc8821c2ant.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/mp_precomp.h:18,
+                 from drivers/net/wireless/rtl8811cu/hal/btc/halbtc8821c2ant.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/drv_types.h:30,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mp.c:16:
+drivers/net/wireless/rtl8811cu/include/wifi.h:1032: warning: "IEEE80211_MAX_AMPDU_BUF" redefined
+ 1032 | #define IEEE80211_MAX_AMPDU_BUF 0x40
+      | 
+In file included from drivers/net/wireless/rtl8811cu/include/osdep_service_linux.h:83,
+                 from drivers/net/wireless/rtl8811cu/include/osdep_service.h:50,
+                 from drivers/net/wireless/rtl8811cu/include/drv_types.h:27,
+                 from drivers/net/wireless/rtl8811cu/core/rtw_mp.c:16:
+./include/linux/ieee80211.h:1656: note: this is the location of the previous definition
+ 1656 | #define IEEE80211_MAX_AMPDU_BUF  0x100
+      | 
+drivers/staging/fusb30x/fusb30x.c: In function ‘state_machine_typec’:
+drivers/staging/fusb30x/fusb30x.c:2935:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2935 |   if (chip->conn_state != policy_src_negotiate_cap)
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:2937:2: note: here
+ 2937 |  case policy_src_negotiate_cap:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:2938:3: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2938 |   fusb_state_src_negotiate_cap(chip, evt);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/staging/fusb30x/fusb30x.c:2940:2: note: here
+ 2940 |  case policy_src_transition_supply:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:2976:3: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2976 |   fusb_state_snk_evaluate_caps(chip, evt);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/staging/fusb30x/fusb30x.c:2978:2: note: here
+ 2978 |  case policy_snk_select_cap:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_send_caps’:
+drivers/staging/fusb30x/fusb30x.c:1806:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1806 |   chip->tx_state = tx_idle;
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~
+drivers/staging/fusb30x/fusb30x.c:1808:2: note: here
+ 1808 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:1825:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1825 |   if (!(evt & FLAG_EVENT))
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:1827:2: note: here
+ 1827 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_transition_supply’:
+drivers/staging/fusb30x/fusb30x.c:1872:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1872 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:1874:2: note: here
+ 1874 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_cap_response’:
+drivers/staging/fusb30x/fusb30x.c:1916:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1916 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:1918:2: note: here
+ 1918 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘vdm_send_discoveryid’:
+drivers/staging/fusb30x/fusb30x.c:1232:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1232 |   chip->vdm_send_state++;
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:1233:2: note: here
+ 1233 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:1247:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1247 |   if (chip->vdm_send_state != 2)
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:1249:2: note: here
+ 1249 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘vdm_send_discoverysvid’:
+drivers/staging/fusb30x/fusb30x.c:1274:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1274 |   chip->vdm_send_state++;
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:1275:2: note: here
+ 1275 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:1289:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1289 |   if (chip->vdm_send_state != 2)
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:1291:2: note: here
+ 1291 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘vdm_send_discoverymodes’:
+drivers/staging/fusb30x/fusb30x.c:1316:24: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1316 |    chip->vdm_send_state++;
+      |    ~~~~~~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:1317:3: note: here
+ 1317 |   case 1:
+      |   ^~~~
+drivers/staging/fusb30x/fusb30x.c:1331:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1331 |    if (chip->vdm_send_state != 2)
+      |       ^
+drivers/staging/fusb30x/fusb30x.c:1333:3: note: here
+ 1333 |   default:
+      |   ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘vdm_send_entermode’:
+drivers/staging/fusb30x/fusb30x.c:1365:30: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1365 |   chip->notify.is_enter_mode = false;
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+drivers/staging/fusb30x/fusb30x.c:1366:2: note: here
+ 1366 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:1380:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1380 |   if (chip->vdm_send_state != 2)
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:1382:2: note: here
+ 1382 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘vdm_send_getdpstatus’:
+drivers/staging/fusb30x/fusb30x.c:1406:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1406 |   chip->vdm_send_state++;
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:1407:2: note: here
+ 1407 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:1422:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1422 |   if (chip->vdm_send_state != 2)
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:1424:2: note: here
+ 1424 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘vdm_send_dpconfig’:
+drivers/staging/fusb30x/fusb30x.c:1448:23: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1448 |   chip->vdm_send_state++;
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:1449:2: note: here
+ 1449 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:1463:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 1463 |   if (chip->vdm_send_state != 2)
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:1465:2: note: here
+ 1465 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_get_sink_cap’:
+drivers/staging/fusb30x/fusb30x.c:2253:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2253 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:2255:2: note: here
+ 2255 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:2266:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2266 |   if (!(evt & FLAG_EVENT))
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:2268:2: note: here
+ 2268 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_send_hardreset’:
+drivers/staging/fusb30x/fusb30x.c:2298:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2298 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:2300:2: note: here
+ 2300 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_send_softreset’:
+drivers/staging/fusb30x/fusb30x.c:2343:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2343 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:2345:2: note: here
+ 2345 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:2356:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2356 |   if (!(evt & FLAG_EVENT))
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:2358:2: note: here
+ 2358 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_softreset’:
+drivers/staging/fusb30x/fusb30x.c:2321:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2321 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:2323:2: note: here
+ 2323 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_snk_select_cap’:
+drivers/staging/fusb30x/fusb30x.c:2467:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2467 |   chip->tx_state = tx_idle;
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~
+drivers/staging/fusb30x/fusb30x.c:2469:2: note: here
+ 2469 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:2482:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2482 |   if (!(evt & FLAG_EVENT))
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:2484:2: note: here
+ 2484 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_snk_send_hardreset’:
+drivers/staging/fusb30x/fusb30x.c:2606:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2606 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:2607:2: note: here
+ 2607 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_snk_send_softreset’:
+drivers/staging/fusb30x/fusb30x.c:2803:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2803 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:2804:2: note: here
+ 2804 |  case 1:
+      |  ^~~~
+drivers/staging/fusb30x/fusb30x.c:2816:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2816 |   if (!(evt & FLAG_EVENT))
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:2818:2: note: here
+ 2818 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_snk_softreset’:
+drivers/staging/fusb30x/fusb30x.c:2778:18: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2778 |   chip->sub_state++;
+      |   ~~~~~~~~~~~~~~~^~
+drivers/staging/fusb30x/fusb30x.c:2780:2: note: here
+ 2780 |  default:
+      |  ^~~~~~~
+drivers/staging/fusb30x/fusb30x.c: In function ‘fusb_state_src_prs_source_off’:
+drivers/staging/fusb30x/fusb30x.c:2186:6: warning: this statement may fall through [-Wimplicit-fallthrough=]
+ 2186 |   if (chip->sub_state != 3)
+      |      ^
+drivers/staging/fusb30x/fusb30x.c:2188:2: note: here
+ 2188 |  case 2:
+      |  ^~~~
+
+	== deb packages: image, headers, firmware, dtb ==
+
+[1mdpkg-buildpackage: [0m[1;33mwarning[0m: using a gain-root-command while being root
+dpkg-architecture: warning: specified GNU system type aarch64-linux-gnu does not match CC system type aarch64-none-linux-gnu, try setting a correct CC environment variable
+[1;35m dpkg-source --before-build .
+[0m[1;35m debian/rules build
+[0mscripts/Makefile.lib:8: 'always' is deprecated. Please use 'always-y' instead
+[1;35m fakeroot -u debian/rules binary
+[0mtar: scripts/.unifdef.cmd: Cannot stat: No such file or directory
+tar: scripts/basic/.fixdep.cmd: Cannot stat: No such file or directory
+tar: scripts/basic/fixdep: Cannot stat: No such file or directory
+tar: scripts/kallsyms: Cannot stat: No such file or directory
+tar: scripts/unifdef: Cannot stat: No such file or directory
+tar: scripts/.module.lds.cmd: Cannot stat: No such file or directory
+tar: scripts/sorttable: Cannot stat: No such file or directory
+tar: scripts/mod/devicetable-offsets.h: Cannot stat: No such file or directory
+tar: scripts/mod/.devicetable-offsets.s.cmd: Cannot stat: No such file or directory
+tar: scripts/mod/empty.o: Cannot stat: No such file or directory
+tar: scripts/mod/mk_elfconfig: Cannot stat: No such file or directory
+tar: scripts/mod/.mk_elfconfig.cmd: Cannot stat: No such file or directory
+tar: scripts/mod/modpost: Cannot stat: No such file or directory
+tar: scripts/mod/modpost.o: Cannot stat: No such file or directory
+tar: scripts/mod/sumversion.o: Cannot stat: No such file or directory
+tar: scripts/mod/.sumversion.o.cmd: Cannot stat: No such file or directory
+tar: scripts/mod/.file2alias.o.cmd: Cannot stat: No such file or directory
+tar: scripts/mod/file2alias.o: Cannot stat: No such file or directory
+tar: scripts/mod/devicetable-offsets.s: Cannot stat: No such file or directory
+tar: scripts/mod/.elfconfig.h.cmd: Cannot stat: No such file or directory
+tar: scripts/mod/.empty.o.cmd: Cannot stat: No such file or directory
+tar: scripts/mod/elfconfig.h: Cannot stat: No such file or directory
+tar: scripts/mod/.modpost.cmd: Cannot stat: No such file or directory
+tar: scripts/mod/.modpost.o.cmd: Cannot stat: No such file or directory
+tar: scripts/.asn1_compiler.cmd: Cannot stat: No such file or directory
+tar: scripts/.sorttable.cmd: Cannot stat: No such file or directory
+tar: scripts/module.lds: Cannot stat: No such file or directory
+tar: scripts/kconfig/.preprocess.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/util.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/.mconf.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/conf: Cannot stat: No such file or directory
+tar: scripts/kconfig/parser.tab.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/.expr.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/.mconf.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/.util.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/expr.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/.lexer.lex.c.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/.conf.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/mconf-cfg: Cannot stat: No such file or directory
+tar: scripts/kconfig/.parser.tab.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/util.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/yesno.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/.checklist.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/textbox.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/.util.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/.menubox.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/.textbox.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/.yesno.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/menubox.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/inputbox.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/checklist.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/lxdialog/.inputbox.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/.confdata.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lexer.lex.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/.parser.tab.h.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/.lexer.lex.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/lexer.lex.c: Cannot stat: No such file or directory
+tar: scripts/kconfig/preprocess.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/conf.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/.symbol.o.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/symbol.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/mconf: Cannot stat: No such file or directory
+tar: scripts/kconfig/parser.tab.c: Cannot stat: No such file or directory
+tar: scripts/kconfig/.conf.cmd: Cannot stat: No such file or directory
+tar: scripts/kconfig/confdata.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/mconf.o: Cannot stat: No such file or directory
+tar: scripts/kconfig/parser.tab.h: Cannot stat: No such file or directory
+tar: scripts/.bin2c.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/util.o: Cannot stat: No such file or directory
+tar: scripts/dtc/srcpos.o: Cannot stat: No such file or directory
+tar: scripts/dtc/fstree.o: Cannot stat: No such file or directory
+tar: scripts/dtc/dtc-lexer.lex.o: Cannot stat: No such file or directory
+tar: scripts/dtc/dtc-parser.tab.o: Cannot stat: No such file or directory
+tar: scripts/dtc/dtc.o: Cannot stat: No such file or directory
+tar: scripts/dtc/.livetree.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.dtc-parser.tab.h.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.util.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.dtc-lexer.lex.c.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.flattree.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.dtc.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/checks.o: Cannot stat: No such file or directory
+tar: scripts/dtc/livetree.o: Cannot stat: No such file or directory
+tar: scripts/dtc/dtc-parser.tab.h: Cannot stat: No such file or directory
+tar: scripts/dtc/.dtc-lexer.lex.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.data.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/dtc: Cannot stat: No such file or directory
+tar: scripts/dtc/.checks.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/flattree.o: Cannot stat: No such file or directory
+tar: scripts/dtc/treesource.o: Cannot stat: No such file or directory
+tar: scripts/dtc/.srcpos.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/dtc-parser.tab.c: Cannot stat: No such file or directory
+tar: scripts/dtc/.dtc.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.fstree.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/dtc-lexer.lex.c: Cannot stat: No such file or directory
+tar: scripts/dtc/.treesource.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/.dtc-parser.tab.o.cmd: Cannot stat: No such file or directory
+tar: scripts/dtc/data.o: Cannot stat: No such file or directory
+tar: scripts/bin2c: Cannot stat: No such file or directory
+tar: scripts/.extract-cert.cmd: Cannot stat: No such file or directory
+tar: scripts/extract-cert: Cannot stat: No such file or directory
+tar: scripts/.kallsyms.cmd: Cannot stat: No such file or directory
+tar: scripts/insert-sys-cert: Cannot stat: No such file or directory
+tar: scripts/sign-file: Cannot stat: No such file or directory
+tar: scripts/.sign-file.cmd: Cannot stat: No such file or directory
+tar: scripts/.insert-sys-cert.cmd: Cannot stat: No such file or directory
+tar: scripts/selinux/mdp/mdp: Cannot stat: No such file or directory
+tar: scripts/selinux/mdp/.mdp.cmd: Cannot stat: No such file or directory
+tar: scripts/selinux/genheaders/.genheaders.cmd: Cannot stat: No such file or directory
+tar: scripts/selinux/genheaders/genheaders: Cannot stat: No such file or directory
+tar: scripts/asn1_compiler: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+[1;35m dpkg-genbuildinfo --build=binary -O../linux-5.10.44-rockchip64_2.2.2_arm64.buildinfo
+[0m[1;35m dpkg-genchanges --build=binary -O../linux-5.10.44-rockchip64_2.2.2_arm64.changes
+[0m[1mdpkg-genchanges: [0m[1;33mwarning[0m: package linux-libc-dev in control file but not in files list
+[1;35m dpkg-source --after-build .
+[0m
