@@ -1,4 +1,9 @@
-for Orange Pi R1 Plus LTS on Wsl(jammy and docker) environment
+for Orange Pi R1 Plus LTS on Wsl(jammy) environment
+
+```
+$ sudo ./build.sh
+```
+
 
 ./output/images/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img
 
