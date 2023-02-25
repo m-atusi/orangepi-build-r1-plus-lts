@@ -2,7 +2,7 @@ for Orange Pi R1 Plus LTS on Wsl(jammy) environment
 
 ```
 $ uname -a
-Linux localvaio 5.15.79.1-microsoft-standard-WSL2 #1 SMP Wed Nov 23 01:01:46 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+Linux  5.15.79.1-microsoft-standard-WSL2 #1 SMP Wed Nov 23 01:01:46 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 $ sudo ./build.sh
 ```
 
