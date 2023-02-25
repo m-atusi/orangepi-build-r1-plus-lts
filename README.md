@@ -4,10 +4,10 @@ for Orange Pi R1 Plus LTS on Wsl(jammy) environment
 $ uname -a
 Linux  5.15.79.1-microsoft-standard-WSL2 #1 SMP Wed Nov 23 01:01:46 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 $ sudo ./build.sh
+
+$ ls -l ./output/images/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img
+-rw-rw-r-- 1 owner group 1195376640 Feb 25 01:49 ./output/images/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img
 ```
-
-
-./output/images/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal/Orangepir1plus-lts_2.2.2_ubuntu_focal_server_linux5.10.44_minimal.img
 
 <img width="731" alt="スクリーンショット 2023-02-24 134906" src="https://user-images.githubusercontent.com/59951021/221100023-44c8a493-4e29-4c61-a815-03446ceeb48c.png">
 
