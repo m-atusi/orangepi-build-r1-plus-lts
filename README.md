@@ -1,4 +1,4 @@
-for Orange Pi R1 Plus LTS on Wsl(jammy) environment
+for building Orange Pi R1 Plus LTS on Wsl(jammy) environment
 
 ```
 $ uname -a
